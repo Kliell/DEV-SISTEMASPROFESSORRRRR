@@ -111,23 +111,10 @@ Criar um modelo `Comentario` com os campos:
 
 **Rotas a adicionar:**
 
-Método
-
-Endpoint
-
-Descrição
-
-`POST`
-
-`/tarefas/{tarefa_id}/comentarios`
-
-Adicionar comentário
-
-`GET`
-
-`/tarefas/{tarefa_id}/comentarios`
-
-Listar comentários
+| Método | Endpoint | Descrição |
+| ------ | -------- | --------- |
+| `POST` | `/tarefas/{tarefa_id}/comentarios` | Adicionar comentário |
+| `GET` | `/tarefas/{tarefa_id}/comentarios` | Listar comentários |
 
 **Requisitos:**
 
