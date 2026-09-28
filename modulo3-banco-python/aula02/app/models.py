@@ -24,3 +24,15 @@ class Cargo(Base):
 
     def __repr__(self):
         return f'<Cargo {self.titulo} {self.nivel}>'
+    class Funcionario(Base):
+        __tablename__ ='funcionario'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    nome = Column(String(100),nullable=False)
+    email = Column(String(100),nullable=False)
+    telefone = Column(Integer, nullable=False)
+    salario = Column(Float, nullable=False)
+    ativo = Column(Boolean, default=True)
+
+    def __repr__(self):
+        return f'<Funcionario id={self.id} nome={self.nome}'
